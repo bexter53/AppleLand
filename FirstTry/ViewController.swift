@@ -4,7 +4,6 @@
 //
 //  Created by Rebecca Fuller on 09/01/2018.
 //  Copyright © 2018 Rebecca Fuller. All rights reserved.
-// Altlansian are taking over the world!
 //
 
 import UIKit
