@@ -10,18 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var TheLabel: UILabel!
-    var PushCount=0
+    @IBOutlet weak var Text1: UITextField!
+    @IBOutlet weak var Text2: UITextField!
+
     @IBAction func ButtonPushed(_ sender: Any) {
-        PushCount = PushCount + 1
-        print(PushCount)
-        if PushCount > 19{
-            TheLabel.text = "Do we have a problem???"
-        }
+        print(Text1.text!)
+        print(Text2.text!)
+        TheLabel.text = "Answer is.. \(Double(Text1.text!)! + Double(Text2.text!)!)"
     }
     
-    @IBAction func NextButtonPushed(_ sender: Any) {
-        TheLabel.text = "OMG! Buttons ROCK!!!!"
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib..
